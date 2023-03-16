@@ -1,6 +1,13 @@
 import datetime
+import Employe
+import Client
+import Vehicule
 
 class Traverse:
-    noTraverse = 0
-    dateHeure = datetime.datetime
-    villeDepart = ""
+    def __init__(self, noTraverse:int, dateHeure:datetime, villeDepart:str, employeInscription:Employe, listeVehicule:list, listeClient:list):
+        self.noTraverse = noTraverse
+        self.dateHeure = dateHeure
+        self.villeDepart = villeDepart
+        self.employeInscription = employeInscription
+        self.listeVehicule = listeVehicule
+        self.listeClient = listeClient
