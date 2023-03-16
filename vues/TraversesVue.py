@@ -24,9 +24,15 @@ class VueTraverses(Frame):
         lblEmployeInscription = Label(self, text="Employé inscription")
         lblEmployeInscription.grid(column=0, row=2)
 
+        # Création de variables pour la liste deroulante
+        selection = StringVar()
+        selection.set("Employé inscription")
+
+        listeEmployes = ["Employé inscription", "Employé 1", "Employé 2", "Employé 3"]
+
         # creation d'une liste déroulante employe inscription
-        txtEmployeInscription = Entry(self, width=40)
-        txtEmployeInscription.grid(column=1, row=2)
+        dropEmployeInscription = OptionMenu(self, selection, *listeEmployes)
+        dropEmployeInscription.grid(column=1, row=2)
 
         # Création d'une liste vehicule
         lstVehicule = Listbox(self, width=40)
