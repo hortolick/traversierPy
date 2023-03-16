@@ -1,6 +1,6 @@
 from tkinter import *
 
-class VueTraversiers(Frame):
+class TraversiersVue(Frame):
     def __init__(self, master):
         super().__init__(master)
 

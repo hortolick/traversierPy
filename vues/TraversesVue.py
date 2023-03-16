@@ -1,6 +1,6 @@
 from tkinter import *
 
-class VueTraverses(Frame):
+class TraversesVue(Frame):
     def __init__(self, master):
         super().__init__(master)
 
@@ -42,6 +42,19 @@ class VueTraverses(Frame):
         lstClient = Listbox(self, width=40)
         lstClient.grid(column=1, row=4)
 
+        def btnCreerClick(self):
+            if self.controller:
+                self.controller.creerTraverse()
+
         # Création d'un bouton ajouter
-        btnAjouter = Button(self, text="Ajouter")
-        btnAjouter.grid(column=0, row=4)
+        btnCreer = Button(self, text="Creer", command=btnCreerClick)
+        btnCreer.grid(column=0, row=4)
+
+        def set_controller(self, controller):
+            """
+            Set the controller
+            :param controller:
+            :return:
+            """
+            self.controller = controller
+

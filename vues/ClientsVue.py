@@ -1,6 +1,6 @@
 from tkinter import *
 
-class VueClients(Frame):
+class ClientsVue(Frame):
     def __init__(self, master):
         super().__init__(master)
         # Création d'un label Nom
@@ -98,6 +98,14 @@ class VueClients(Frame):
         btnAjouter = Button(self, text="Ajouter", command=ajouterClient)
         btnAjouter.grid(column=0, row=11)
 
+        # petit espace
+        lblEspace = Label(self, text="    ")
+        lblEspace.grid(column=2, row=0)
+
+        # création d'un label liste de clients
+        lblListeClients = Label(self, text="Liste de clients")
+        lblListeClients.grid(column=3, row=0)
+
         # création d'une liste de clients
         lstClients = Listbox(self, width=40)
-        lstClients.grid(column=1, row=11)
+        lstClients.grid(column=3, row=1)

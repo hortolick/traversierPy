@@ -1,6 +1,6 @@
 from tkinter import *
 
-class VueEmployes(Frame):
+class EmployesVue(Frame):
     def __init__(self, master):
         super().__init__(master)
 
