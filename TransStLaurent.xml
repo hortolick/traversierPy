@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transStLaurent>
+  <clients>
+    <client nom="Doe" prenom="John" dateNaissance="01/01/1980" adresse="123 Main St." ville="Montreal" province="QC" codePostal="H1H 1H1" telephone="514-123-4567" courriel="johndoe@example.com" numeroIdentification="12345678" sexe="M"/>
+    <client nom="Doe" prenom="Jane" dateNaissance="01/01/1985" adresse="456 Main St." ville="Quebec" province="QC" codePostal="G1G 1G1" telephone="418-123-4567" courriel="janedoe@example.com" numeroIdentification="87654321" sexe="F"/>
+    <client nom="Smith" prenom="Bob" dateNaissance="01/01/1990" adresse="789 Main St." ville="Toronto" province="ON" codePostal="M1M 1M1" telephone="416-123-4567" courriel="bobsmith@example.com" numeroIdentification="56781234" sexe="M"/>
+  </clients>
+
+  <employes>
+      <employe nom="Doe" prenom="John" dateNaissance="1990-01-01" adresse="123 Main St" ville="Montreal" province="Quebec" codePostal="H1A 2B3" telephone="514-123-4567" courriel="johndoe@email.com" noEmploye="12345" nAS="123456789" dateEmbauche="2022"/>
+      <employe nom="Smith" prenom="Jane" dateNaissance="1985-05-12" adresse="456 First St" ville="Toronto" province="Ontario" codePostal="M1B 3C4" telephone="416-555-1234" courriel="janesmith@email.com" noEmploye="67890" nAS="987654321" dateEmbauche="2019"/>
+  </employes>
+
+</transStLaurent>

@@ -100,11 +100,9 @@ class EmployesVue(Frame):
         self.txtDateArret = Entry(self, width=40)
         self.txtDateArret.grid(column=1, row=11)
 
-        def ajouterEmploye():
-            self.lstEmployes.insert(END, self.txtNom.get() + " " + self.txtPrenom.get())
 
         #creation d'un bouton ajouter
-        self.btnAjouter = Button(self, text="Ajouter", command=ajouterEmploye)
+        self.btnAjouter = Button(self, text="Ajouter")
         self.btnAjouter.grid(column=0, row=12)
 
         #creation d'une liste d'employes
