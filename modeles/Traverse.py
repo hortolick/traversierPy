@@ -4,7 +4,7 @@ import Client
 import Vehicule
 
 class Traverse:
-    def __init__(self, noTraverse:int, dateHeure:datetime, villeDepart:str, employeInscription:Employe, listeVehicule:list, listeClient:list):
+    def __init__(self, noTraverse = 0, dateHeure = datetime.datetime.now(), villeDepart = "", employeInscription = Employe.Employe(), listeVehicule = [], listeClient = []):
         self.noTraverse = noTraverse
         self.dateHeure = dateHeure
         self.villeDepart = villeDepart

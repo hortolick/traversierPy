@@ -1,5 +1,5 @@
 class Vehicule:
-    def __init__(self, noIdentification:int, marque:str, modele:str, couleur:str, annee:int, immatriculation:str):
+    def __init__(self, noIdentification = 0, marque = "", modele = "", couleur = "", annee = 0, immatriculation = ""):
         self.noIdentification = noIdentification
         self.marque = marque
         self.modele = modele

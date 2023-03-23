@@ -1,5 +1,5 @@
 class Personne:
-    def __init__(self, nom: str, adresse: str, ville: str, province: str, codePostal: str, telephone: str, courriel: str):
+    def __init__(self, nom = "", adresse = "", ville = "", province = "", codePostal = "", telephone = "", courriel = ""):
         self.nom = nom
         self.adresse = adresse
         self.ville = ville

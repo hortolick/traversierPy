@@ -2,7 +2,7 @@ from modeles.Personne import Personne
 import datetime
 
 class Employe(Personne):
-    def __init__(self, nom: str, adresse: str, ville: str, province: str, codePostal: str, telephone: str, courriel: str, noEmploye:int, nAS:int, dateEmbauche:datetime, dateArret:datetime):
+    def __init__(self, nom="", adresse="", ville="", province="", codePostal="", telephone="", courriel="", noEmploye="", nAS="", dateEmbauche=datetime.datetime.now(), dateArret=datetime.datetime.now()):
         self.nom = nom
         self.adresse = adresse
         self.ville = ville
