@@ -1,8 +1,8 @@
-import Personne
+from modeles.Personne import Personne
 import datetime
 
 class Client(Personne):
-    def __init__(self, nom: str, adresse: str, ville: str, province: str, codePostal: str, telephone: str, courriel: str, numeroIdentification:int, sexe, dateNaissance:datetime):
+    def __init__(self, nom="", adresse="", ville="", province="", codePostal="", telephone="", courriel="", numeroIdentification="", sexe="", dateNaissance=datetime.datetime.now()):
         self.nom = nom
         self.adresse = adresse
         self.ville = ville

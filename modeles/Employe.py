@@ -1,4 +1,4 @@
-import Personne
+from modeles.Personne import Personne
 import datetime
 
 class Employe(Personne):

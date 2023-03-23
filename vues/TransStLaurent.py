@@ -11,27 +11,27 @@ class TransStLaurentVue(Frame):
         super().__init__(master)
 
         # Création d'un controleur de tab
-        tabControl = ttk.Notebook(self)
+        self.tabControl = ttk.Notebook(self)
 
         # Création et ajout d'un onglet Traverses
-        tabTraverses = TraversesVue(tabControl)
-        tabControl.add(tabTraverses, text='Traverses')
+        self.tabTraverses = TraversesVue(self.tabControl)
+        self.tabControl.add(self.tabTraverses, text='Traverses')
 
         # Création et ajout d'un onglet Traversiers
-        tabTraversiers = TraversiersVue(tabControl)
-        tabControl.add(tabTraversiers, text='Traversiers')
+        self.tabTraversiers = TraversiersVue(self.tabControl)
+        self.tabControl.add(self.tabTraversiers, text='Traversiers')
 
         # Création et ajout d'un onglet Employés
-        tabEmployes = EmployesVue(tabControl)
-        tabControl.add(tabEmployes, text='Employés')
+        self.tabEmployes = EmployesVue(self.tabControl)
+        self.tabControl.add(self.tabEmployes, text='Employés')
 
         # Création et ajout d'un onglet Clients
-        tabClients = ClientsVue(tabControl)
-        tabControl.add(tabClients, text='Clients')
+        self.tabClients = ClientsVue(self.tabControl)
+        self.tabControl.add(self.tabClients, text='Clients')
 
         # Création et ajout d'un onglet Véhicules
-        #tabVehicules = ttk.Frame(tabControl)
-        #tabControl.add(tabVehicules, text='Véhicules')
+        #self.tabVehicules = ttk.Frame(self.tabControl)
+        #self.tabControl.add(self.tabVehicules, text='Véhicules')
 
 
-        tabControl.pack(expand=1, fill="both")
+        self.tabControl.pack(expand=1, fill="both")

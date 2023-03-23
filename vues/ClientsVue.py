@@ -4,108 +4,108 @@ class ClientsVue(Frame):
     def __init__(self, master):
         super().__init__(master)
         # Création d'un label Nom
-        lblNom = Label(self, text="Nom")
-        lblNom.grid(column=0, row=0)
+        self.lblNom = Label(self, text="Nom")
+        self.lblNom.grid(column=0, row=0)
 
         # creation d'un champ de saisie nom
-        txtNom = Entry(self, width=40)
-        txtNom.grid(column=1, row=0)
+        self.txtNom = Entry(self, width=40)
+        self.txtNom.grid(column=1, row=0)
 
         # Création d'un label Prénom
-        lblPrenom = Label(self, text="Prénom")
-        lblPrenom.grid(column=0, row=1)
+        self.lblPrenom = Label(self, text="Prénom")
+        self.lblPrenom.grid(column=0, row=1)
 
         # creation d'un champ de saisie prénom
-        txtPrenom = Entry(self, width=40)
-        txtPrenom.grid(column=1, row=1)
+        self.txtPrenom = Entry(self, width=40)
+        self.txtPrenom.grid(column=1, row=1)
 
         #cretion d'un label Date de naissance
-        lblDateNaissance = Label(self, text="Date de naissance")
-        lblDateNaissance.grid(column=0, row=2)
+        self.lblDateNaissance = Label(self, text="Date de naissance")
+        self.lblDateNaissance.grid(column=0, row=2)
 
         #creation d'un champ de saisie date de naissance
-        txtDateNaissance = Entry(self, width=40)
-        txtDateNaissance.grid(column=1, row=2)
+        self.txtDateNaissance = Entry(self, width=40)
+        self.txtDateNaissance.grid(column=1, row=2)
 
         # Création d'un label adresse
-        lblAdresse = Label(self, text="Adresse")
-        lblAdresse.grid(column=0, row=3)
+        self.lblAdresse = Label(self, text="Adresse")
+        self.lblAdresse.grid(column=0, row=3)
 
         # creation d'un champ de saisie adresse
-        txtAdresse = Entry(self, width=40)
-        txtAdresse.grid(column=1, row=3)
+        self.txtAdresse = Entry(self, width=40)
+        self.txtAdresse.grid(column=1, row=3)
 
         # Création d'un label ville
-        lblVille = Label(self, text="Ville")
-        lblVille.grid(column=0, row=4)
+        self.lblVille = Label(self, text="Ville")
+        self.lblVille.grid(column=0, row=4)
 
         # creation d'un champ de saisie ville
-        txtVille = Entry(self, width=40)
-        txtVille.grid(column=1, row=4)
+        self.txtVille = Entry(self, width=40)
+        self.txtVille.grid(column=1, row=4)
 
         # Création d'un label province
-        lblProvince = Label(self, text="Province")
-        lblProvince.grid(column=0, row=5)
+        self.lblProvince = Label(self, text="Province")
+        self.lblProvince.grid(column=0, row=5)
 
         # creation d'un champ de saisie province
-        txtProvince = Entry(self, width=40)
-        txtProvince.grid(column=1, row=5)
+        self.txtProvince = Entry(self, width=40)
+        self.txtProvince.grid(column=1, row=5)
 
         # Création d'un label code postal
-        lblCodePostal = Label(self, text="Code postal")
-        lblCodePostal.grid(column=0, row=6)
+        self.lblCodePostal = Label(self, text="Code postal")
+        self.lblCodePostal.grid(column=0, row=6)
 
         # creation d'un champ de saisie code postal
-        txtCodePostal = Entry(self, width=40)
-        txtCodePostal.grid(column=1, row=6)
+        self.txtCodePostal = Entry(self, width=40)
+        self.txtCodePostal.grid(column=1, row=6)
 
         # Création d'un label téléphone
-        lblTelephone = Label(self, text="Téléphone")
-        lblTelephone.grid(column=0, row=7)
+        self.lblTelephone = Label(self, text="Téléphone")
+        self.lblTelephone.grid(column=0, row=7)
 
         # creation d'un champ de saisie téléphone
-        txtTelephone = Entry(self, width=40)
-        txtTelephone.grid(column=1, row=7)
+        self.txtTelephone = Entry(self, width=40)
+        self.txtTelephone.grid(column=1, row=7)
 
         # Création d'un label courriel
-        lblCourriel = Label(self, text="Courriel")
-        lblCourriel.grid(column=0, row=8)
+        self.lblCourriel = Label(self, text="Courriel")
+        self.lblCourriel.grid(column=0, row=8)
 
         # creation d'un champ de saisie courriel
-        txtCourriel = Entry(self, width=40)
-        txtCourriel.grid(column=1, row=8)
+        self.txtCourriel = Entry(self, width=40)
+        self.txtCourriel.grid(column=1, row=8)
 
         # Création d'un label numéro d'identification
-        lblNumeroIdentification = Label(self, text="Numéro d'identification")
-        lblNumeroIdentification.grid(column=0, row=9)
+        self.lblNumeroIdentification = Label(self, text="Numéro d'identification")
+        self.lblNumeroIdentification.grid(column=0, row=9)
 
         # creation d'un champ de saisie numéro d'identification
-        txtNumeroIdentification = Entry(self, width=40)
-        txtNumeroIdentification.grid(column=1, row=9)
+        self.txtNumeroIdentification = Entry(self, width=40)
+        self.txtNumeroIdentification.grid(column=1, row=9)
 
         # Création d'un label sexe
-        lblSexe = Label(self, text="Sexe")
-        lblSexe.grid(column=0, row=10)
+        self.lblSexe = Label(self, text="Sexe")
+        self.lblSexe.grid(column=0, row=10)
 
         # creation d'un champ de saisie sexe
-        txtSexe = Entry(self, width=40)
-        txtSexe.grid(column=1, row=10)
+        self.txtSexe = Entry(self, width=40)
+        self.txtSexe.grid(column=1, row=10)
 
         def ajouterClient():
-            lstClients.insert(END, txtNom.get() + " " + txtPrenom.get())
+            self.lstClients.insert(END, self.txtNom.get() + " " + self.txtPrenom.get())
 
         # Création d'un bouton ajouter
-        btnAjouter = Button(self, text="Ajouter", command=ajouterClient)
-        btnAjouter.grid(column=0, row=11)
+        self.btnAjouter = Button(self, text="Ajouter", )
+        self.btnAjouter.grid(column=0, row=11)
 
         # petit espace
-        lblEspace = Label(self, text="    ")
-        lblEspace.grid(column=2, row=0)
+        self.lblEspace = Label(self, text="    ")
+        self.lblEspace.grid(column=2, row=0)
 
         # création d'un label liste de clients
-        lblListeClients = Label(self, text="Liste de clients")
-        lblListeClients.grid(column=3, row=0)
+        self.lblListeClients = Label(self, text="Liste de clients")
+        self.lblListeClients.grid(column=3, row=0)
 
         # création d'une liste de clients
-        lstClients = Listbox(self, width=40)
-        lstClients.grid(column=3, row=1)
+        self.lstClients = Listbox(self, width=40)
+        self.lstClients.grid(column=3, row=1)
