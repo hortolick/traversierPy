@@ -30,8 +30,8 @@ class TransStLaurentVue(Frame):
         self.tabControl.add(self.tabClients, text='Clients')
 
         # Création et ajout d'un onglet Véhicules
-        #self.tabVehicules = ttk.Frame(self.tabControl)
-        #self.tabControl.add(self.tabVehicules, text='Véhicules')
+        self.tabVehicules = ttk.Frame(self.tabControl)
+        self.tabControl.add(self.tabVehicules, text='Véhicules')
 
 
         self.tabControl.pack(expand=1, fill="both")

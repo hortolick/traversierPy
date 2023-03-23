@@ -42,12 +42,9 @@ class TraversesVue(Frame):
         self.lstClient = Listbox(self, width=40)
         self.lstClient.grid(column=1, row=4)
 
-        def btnCreerClick(self):
-            if self.controller:
-                self.controller.creerTraverse()
 
         # Création d'un bouton ajouter
-        self.btnCreer = Button(self, text="Creer", command=btnCreerClick)
+        self.btnCreer = Button(self, text="Creer")
         self.btnCreer.grid(column=0, row=4)
 
 
