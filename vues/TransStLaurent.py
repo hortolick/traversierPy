@@ -5,6 +5,7 @@ from vues.EmployesVue import EmployesVue
 from vues.ClientsVue import ClientsVue
 from vues.TraversesVue import TraversesVue
 from vues.TraversiersVue import TraversiersVue
+from vues.VehiculesVue import VehiculesVue
 
 class TransStLaurentVue(Frame):
     def __init__(self, master):
@@ -14,8 +15,8 @@ class TransStLaurentVue(Frame):
         self.tabControl = ttk.Notebook(self)
 
         # Création et ajout d'un onglet Traverses
-        self.tabTraverses = TraversesVue(self.tabControl)
-        self.tabControl.add(self.tabTraverses, text='Traverses')
+        self.tabTraverse = TraversesVue(self.tabControl)
+        self.tabControl.add(self.tabTraverse, text='Traverse')
 
         # Création et ajout d'un onglet Traversiers
         self.tabTraversiers = TraversiersVue(self.tabControl)
@@ -30,7 +31,7 @@ class TransStLaurentVue(Frame):
         self.tabControl.add(self.tabClients, text='Clients')
 
         # Création et ajout d'un onglet Véhicules
-        self.tabVehicules = ttk.Frame(self.tabControl)
+        self.tabVehicules = VehiculesVue(self.tabControl)
         self.tabControl.add(self.tabVehicules, text='Véhicules')
 
 

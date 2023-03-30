@@ -1,7 +1,8 @@
 from tkinter import *
 
 class VehiculesVue(Frame):
-    def __init__(self,master):
+    def __init__(self, master):
+        super().__init__(master)
         # Création d'un label NoIdentification
         self.lblNoIdentification = Label(self, text="NoIdentification")
         self.lblNoIdentification.grid(column=0, row=0)
@@ -53,3 +54,8 @@ class VehiculesVue(Frame):
         # Création d'un bouton Ajouter
         self.btnAjouter = Button(self, text="Ajouter")
         self.btnAjouter.grid(column=0, row=6)
+
+        #creation d'une liste de vehicules
+        self.lstVehicules = Listbox(self, width=40)
+        self.lstVehicules.grid(column=1, row=6)
+

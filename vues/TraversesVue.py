@@ -24,27 +24,54 @@ class TraversesVue(Frame):
         self.lblEmployeInscription = Label(self, text="Employé inscription")
         self.lblEmployeInscription.grid(column=0, row=2)
 
-        # Création de variables pour la liste deroulante
-        self.selection = StringVar()
-        self.selection.set("Employé inscription")
-
-        self.listeEmployes = ["Employé inscription", "Employé 1", "Employé 2", "Employé 3"]
-
         # creation d'une liste déroulante employe inscription
-        self.dropEmployeInscription = OptionMenu(self, self.selection, *self.listeEmployes)
-        self.dropEmployeInscription.grid(column=1, row=2)
+        #self.dropEmployeInscription = OptionMenu(self)
+        #self.dropEmployeInscription.grid(column=1, row=2)
 
-        # Création d'une liste vehicule
-        self.lstVehicule = Listbox(self, width=40)
-        self.lstVehicule.grid(column=1, row=3)
+        # creation d'un label nombre clients
+        self.lblNbClients = Label(self, text="Nombre de clients")
+        self.lblNbClients.grid(column=0, row=3)
 
-        # création d'une liste client
-        self.lstClient = Listbox(self, width=40)
-        self.lstClient.grid(column=1, row=4)
+        # creation d'un champ de saisie nombre clients
+        self.txtNbrClients = Entry(self, width=40)
+        self.txtNbrClients.grid(column=1, row=3)
 
+        # creation d'un label nombre vehicules
+        self.lblNbrVehicules = Label(self, text="Nombre de véhicules")
+        self.lblNbrVehicules.grid(column=0, row=4)
 
-        # Création d'un bouton ajouter
-        self.btnCreer = Button(self, text="Creer")
-        self.btnCreer.grid(column=0, row=4)
+        # creation d'un champ de saisie nombre vehicules
+        self.txtNbrVehicules = Entry(self, width=40)
+        self.txtNbrVehicules.grid(column=1, row=4)
 
+        # creation d'un label prix par personne
+        self.lblPrixParPersonne = Label(self, text="Prix par personne")
+        self.lblPrixParPersonne.grid(column=2, row=3)
 
+        # creation d'un champ de saisie prix par personne
+        self.txtPrixParPersonne = Entry(self, width=40)
+        self.txtPrixParPersonne.grid(column=3, row=3)
+
+        # creation d'un label prix par vehicule
+        self.lblPrixParVehicule = Label(self, text="Prix par véhicule")
+        self.lblPrixParVehicule.grid(column=2, row=4)
+
+        # creation d'un champ de saisie prix par vehicule
+        self.txtPrixParVehicule = Entry(self, width=40)
+        self.txtPrixParVehicule.grid(column=3, row=4)
+
+        # creation d'un label revenu clients
+        self.lblRevenuClients = Label(self, text="Revenu clients")
+        self.lblRevenuClients.grid(column=0, row=5)
+
+        # creation d'un label revenu vehicules
+        self.lblRevenuVehicules = Label(self, text="Revenu véhicules")
+        self.lblRevenuVehicules.grid(column=0, row=6)
+
+        # creation d'un label revenu total
+        self.lblRevenuTotal = Label(self, text="Revenu total")
+        self.lblRevenuTotal.grid(column=0, row=7)
+
+        # creation d'un bouton calculer revenu
+        self.btnCalculerRevenu = Button(self, text="Calculer revenu")
+        self.btnCalculerRevenu.grid(column=1, row=8)

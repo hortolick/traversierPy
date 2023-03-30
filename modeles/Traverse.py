@@ -1,10 +1,10 @@
 import datetime
-import Employe
-import Client
-import Vehicule
+from modeles.Employe import Employe
+from modeles.Client import Client
+from modeles.Vehicule import Vehicule
 
 class Traverse:
-    def __init__(self, noTraverse = 0, dateHeure = datetime.datetime.now(), villeDepart = "", employeInscription = Employe.Employe(), listeVehicule = [], listeClient = []):
+    def __init__(self, noTraverse = 0, dateHeure = datetime.datetime.now(), villeDepart = "", employeInscription = Employe(), listeVehicule = [], listeClient = []):
         self.noTraverse = noTraverse
         self.dateHeure = dateHeure
         self.villeDepart = villeDepart
